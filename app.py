@@ -8,9 +8,6 @@ import streamlit as st
 import numpy as np
 st.text_input("Enter your text here", key="text")
 st.text_input("Number of words you want to predict",key="num")
-
-# You can access the value at any point with:
-
 file_path = 'Data.txt'
 with open(file_path, 'r') as file:
     file_content = file.read()
